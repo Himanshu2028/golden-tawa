@@ -1,4 +1,5 @@
 import { useState } from "react";
+import logo from "../assets/golden-tawa-logo.png";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,10 +13,10 @@ function Navbar() {
       <div className="navbar-container">
 
         <a href="/" className="navbar-logo">
-        <img
-            src="/src/assets/golden-tawa-logo.png"
-            alt="The Golden Tawa Co."
-            />
+       <img
+        src={logo}
+        alt="The Golden Tawa Co."
+        />
         </a>
 
         <nav className={`navbar-links ${menuOpen ? "mobile-open" : ""}`}>
